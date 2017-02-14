@@ -4,12 +4,12 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
-
+import { Page3 } from '../pages/page3/gitusers';
 
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class FirstApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = Page1;
@@ -22,7 +22,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Page Two', component: Page2 },
+      { title: 'Git users', component: Page3 }
     ];
 
   }
